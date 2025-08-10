@@ -1,185 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tech Affiliate Hub</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f5f7fa;
-      color: #333;
-    }
-    header {
-      background: #0a74da;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 20px auto;
-      padding: 0 20px;
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    h2 {
-      border-bottom: 3px solid #0a74da;
-      padding-bottom: 8px;
-      margin-bottom: 15px;
-    }
-    .deals, .categories, .blog-posts {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .deal-card, .category-card, .blog-card {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
-      padding: 15px;
-      flex: 1 1 calc(33% - 20px);
-      box-sizing: border-box;
-      min-width: 250px;
-    }
-    .deal-card h3, .category-card h3, .blog-card h3 {
-      margin-top: 0;
-      font-size: 1.1rem;
-    }
-    .btn {
-      display: inline-block;
-      background: #0a74da;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 5px;
-      text-decoration: none;
-      margin-top: 10px;
-    }
-    .btn:hover {
-      background: #065bb5;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #222;
-      color: #aaa;
-      font-size: 0.9rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Affiliate Deals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product h3 {
+            margin: 10px 0;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #ff9900;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #e68a00;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>Tech Affiliate Hub</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">VPN Services</a>
-      <a href="#">Web Hosting</a>
-      <a href="#">Software & Apps</a>
-      <a href="#">Laptops & Hardware</a>
-      <a href="#">Smart Gadgets</a>
-      <a href="#">Blog</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+<header>
+    <h1>Tech Affiliate Deals</h1>
+    <p>Best Gadgets, Software & Tech Accessories</p>
+</header>
 
-  <main class="container">
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Categories</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+</nav>
 
-    <section id="intro">
-      <h2>Welcome to Tech Affiliate Hub</h2>
-      <p>Your go-to source for honest reviews, top deals, and guides on the latest tech products and services.</p>
-    </section>
+<section id="top-deals">
+    <h2>Top Deals</h2>
+    <div class="products-grid">
 
-    <section id="top-deals">
-      <h2>Top Deals</h2>
-      <div class="deals">
-        <div class="deal-card">
-          <h3>NordVPN - 70% Off 3-Year Plan</h3>
-          <p>Secure your online privacy with one of the fastest VPNs. Limited time offer!</p>
-          <a href="#" class="btn">Grab Deal</a>
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/71vFKBpKakL._AC_SL1500_.jpg" alt="Apple MacBook Air M2">
+            <h3>Apple MacBook Air (M2)</h3>
+            <p>Lightweight, powerful, and perfect for work on the go.</p>
+            <a class="btn" href="https://www.amazon.com/s?k=macbook+air+m2&tag=afflidamazo05-20" target="_blank">View Deal</a>
         </div>
-        <div class="deal-card">
-          <h3>Bluehost Hosting - Starting at $2.95/mo</h3>
-          <p>Reliable web hosting with free domain & SSL. Perfect for your new website.</p>
-          <a href="#" class="btn">Get Hosting</a>
-        </div>
-        <div class="deal-card">
-          <h3>Adobe Creative Cloud - 20% Off Annual Plan</h3>
-          <p>Get all your creative apps with a special discount for new subscribers.</p>
-          <a href="#" class="btn">Save Now</a>
-        </div>
-      </div>
-    </section>
 
-    <section id="categories">
-      <h2>Explore Categories</h2>
-      <div class="categories">
-        <div class="category-card">
-          <h3>VPN Services</h3>
-          <p>Protect your data and surf safely with the best VPN providers.</p>
-          <a href="#" class="btn">View VPNs</a>
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/71bI2p-gO-L._AC_SL1500_.jpg" alt="Samsung Galaxy S23 Ultra">
+            <h3>Samsung Galaxy S23 Ultra</h3>
+            <p>Flagship Android phone with incredible camera and performance.</p>
+            <a class="btn" href="https://www.amazon.com/s?k=samsung+galaxy+s23+ultra&tag=afflidamazo05-20" target="_blank">View Deal</a>
         </div>
-        <div class="category-card">
-          <h3>Web Hosting</h3>
-          <p>Find reliable and affordable hosting for your website or blog.</p>
-          <a href="#" class="btn">View Hosting</a>
-        </div>
-        <div class="category-card">
-          <h3>Software & Apps</h3>
-          <p>Discover the best software tools and apps for productivity and creativity.</p>
-          <a href="#" class="btn">View Software</a>
-        </div>
-        <div class="category-card">
-          <h3>Laptops & Hardware</h3>
-          <p>Reviews and deals on the latest laptops, peripherals, and hardware.</p>
-          <a href="#" class="btn">View Hardware</a>
-        </div>
-        <div class="category-card">
-          <h3>Smart Gadgets</h3>
-          <p>Stay ahead with smart home devices and cutting-edge gadgets.</p>
-          <a href="#" class="btn">View Gadgets</a>
-        </div>
-      </div>
-    </section>
 
-    <section id="latest-blog">
-      <h2>Latest Blog Posts</h2>
-      <div class="blog-posts">
-        <div class="blog-card">
-          <h3>How to Choose the Best VPN in 2025</h3>
-          <p>Learn what features matter most when picking a VPN service.</p>
-          <a href="#" class="btn">Read More</a>
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SL1500_.jpg" alt="Apple AirPods Pro 2nd Gen">
+            <h3>Apple AirPods Pro (2nd Gen)</h3>
+            <p>Noise cancellation and premium sound quality in a tiny package.</p>
+            <a class="btn" href="https://www.amazon.com/s?k=airpods+pro+2nd+gen&tag=afflidamazo05-20" target="_blank">View Deal</a>
         </div>
-        <div class="blog-card">
-          <h3>Top 5 Web Hosting Providers Compared</h3>
-          <p>Detailed comparison of the most popular hosting platforms.</p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-        <div class="blog-card">
-          <h3>Must-Have Software for Remote Work</h3>
-          <p>Boost productivity with these essential apps and tools.</p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-      </div>
-    </section>
 
-  </main>
+    </div>
+</section>
 
-  <footer>
-    <p>© 2025 Tech Affiliate Hub | <a href="#" style="color:#aaa;">Privacy Policy</a> | <a href="#" style="color:#aaa;">Affiliate Disclosure</a></p>
-  </footer>
+<section id="categories">
+    <h2>Categories</h2>
+    <ul>
+        <li><a href="https://www.amazon.com/s?k=laptops&tag=afflidamazo05-20" target="_blank">Laptops</a></li>
+        <li><a href="https://www.amazon.com/s?k=smartphones&tag=afflidamazo05-20" target="_blank">Smartphones</a></li>
+        <li><a href="https://www.amazon.com/s?k=smart+home+devices&tag=afflidamazo05-20" target="_blank">Smart Home Devices</a></li>
+        <li><a href="https://www.amazon.com/s?k=wearables&tag=afflidamazo05-20" target="_blank">Wearables</a></li>
+        <li><a href="https://www.amazon.com/s?k=computer+accessories&tag=afflidamazo05-20" target="_blank">Computer Accessories</a></li>
+        <li><a href="https://www.amazon.com/s?k=gaming+gear&tag=afflidamazo05-20" target="_blank">Gaming Gear</a></li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2025 Tech Affiliate Deals | Disclaimer: As an Amazon Associate, I earn from qualifying purchases.</p>
+</footer>
 
 </body>
 </html>
